@@ -1,0 +1,110 @@
+<am<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Lebaran</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" onclick="showContent('home')">Home</a></li>
+                <li><a href="#" onclick="showContent('Lebaran day 1')">Lebaran day 1</a></li>
+                <li><a href="#" onclick="showContent('Lebaran day 2')">Lebaran day 2</a></li>
+                <li><a href="#" onclick="showContent('Lebaran day 4')">Lebaran day 4</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <center>
+            <section id="home" class="content-section">
+                <div class="welcome-container">
+                    <div class="welcome-image">
+                        <img src="foto bertiga.jpg" class="circular-image" alt="Foto Lebaran">
+                </div>
+
+                <div class="welcome-text">
+                <h1>Selamat datang di website Lebaran.</h1>
+                <p> 
+                    Minal Aidzin wal Faizin Mohon Maaf Lahir dan Batin. 
+                    Di website ini berisikan dokumentasi Hari Raya Idhul Fitri , kamu bisa melihat keseruan kami di hari raya melalui website ini.
+                </p>
+                </div>
+               </div>
+            </section>
+            </center>
+
+            <section id="Lebaran day 1" class="content-section" style="display:none;">
+                <h1>Dokumentasi Lebaran hari pertama.</h1>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="foto bertiga.jpg" alt="Lebaran">
+                        <p>Foto bersama Orang Tua</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="foto berempat.jpg" alt="Lebaran">
+                        <p>Foto bersama tante dan sepupu</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Lebaran day 2" class="content-section" style="display:none;">
+                <h1>Dokumentasi Lebaran hari kedua.</h1>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="bersama.jpg" alt="lebaran">
+                        <p>Foto Bersama di Kebun Teh Solok.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="foto berdua.jpg" alt="lebaran">
+                        <p>Foto dengan tante di Kebun Teh Solok.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="sendiri.jpg" alt="lebaran">
+                        <p>Foto sendiri di Kebun Teh Solok.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="kebun teh.jpg" alt="lebaran">
+                        <p>Foto sendiri di Kebun Teh Solok.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Lebaran day 4" class="content-section" style="display:none;">
+                <h1>Dokumentasi Lebaran Hari keempat.</h1>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="foto bareng teman.jpg" alt="lebaran">
+                        <p>Lebaran bareng teman</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="bareng teman.jpg" alt="lebaran">
+                        <p>Lebaran bareng teman</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="sama ara.jpg" alt="lebaran">
+                        <p>Lebaran bareng Ara</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="surang.jpg" alt="lebaran">
+                        <p>Lebaran di Surang</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>Desain by Fadhila Putri</p>
+    </footer>
+    <script>
+        function showContent(sectionId) {
+        let sections = document.querySelectorAll('.content-section'); sections.forEach(section => section.style.display = 'none');document.getElementById(sectionId).style.display = 'block';
+}
+    </script>
+</body>
+</html>
+
+
+    
